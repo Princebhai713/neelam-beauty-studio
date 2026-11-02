@@ -1,0 +1,34 @@
+# OS generated files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+.DS_Store
+*.lnk
+
+# Editor directories and files
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Temporary / Scratch
+scratch/
+temp/
+tmp/
+*.tmp
+*.bak
+*.log
+
+# Python cache (if any scripts run)
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Local env
+.env
+.env.local

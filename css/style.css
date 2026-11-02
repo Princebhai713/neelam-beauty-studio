@@ -5222,3 +5222,85 @@ html {
   gap: 28px !important;
   margin-bottom: 35px !important;
 }
+
+/* --- Card with Side Banner (Special Services & Treatments) --- */
+.card-with-side-banner {
+  display: grid !important;
+  grid-template-columns: 380px 1fr !important;
+  gap: 24px !important;
+  align-items: center !important;
+}
+
+@media (max-width: 1024px) {
+  .card-with-side-banner {
+    grid-template-columns: 1fr !important;
+  }
+}
+
+.special-banner-card {
+  position: relative;
+  border-radius: 20px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #fcecee 0%, #f9e2e6 100%);
+  height: 250px;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.05);
+  border: 1px solid var(--color-border);
+}
+
+.special-banner-card .banner-model-img {
+  width: 55%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center top;
+}
+
+.special-banner-card .banner-script-col {
+  width: 45%;
+  padding: 14px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.special-banner-card .script-celebrate {
+  font-family: var(--font-script);
+  font-size: 2.1rem;
+  color: var(--color-primary);
+  line-height: 1;
+}
+
+.special-banner-card .script-sub {
+  font-family: var(--font-script);
+  font-size: 1.6rem;
+  color: var(--color-primary);
+  line-height: 1.1;
+}
+
+.special-banner-card .heart-symbol {
+  font-size: 1.3rem;
+  color: var(--color-primary);
+  margin-top: 4px;
+}
+
+/* 5 Benefit Cards Row */
+.benefits-grid-5 {
+  display: grid !important;
+  grid-template-columns: repeat(5, 1fr) !important;
+  gap: 12px !important;
+}
+
+@media (max-width: 1200px) {
+  .benefits-grid-5 {
+    grid-template-columns: repeat(3, 1fr) !important;
+  }
+}
+
+@media (max-width: 600px) {
+  .benefits-grid-5 {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+}
