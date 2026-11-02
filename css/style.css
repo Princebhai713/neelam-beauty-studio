@@ -3084,7 +3084,7 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Main Luxury Footer */
 .main-footer {
-  background-color: var(--color-dark);
+  background-color: #221a1b !important;
   color: #cbbab9;
   padding-top: 65px;
   border-top: 1px solid #3d2a2d;
