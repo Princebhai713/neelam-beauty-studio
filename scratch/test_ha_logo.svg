@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000">
+  <defs>
+    <!-- Rich Metallic Gold Gradient -->
+    <linearGradient id="goldGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8b5523" />
+      <stop offset="20%" stop-color="#c6955a" />
+      <stop offset="40%" stop-color="#ecd2a5" />
+      <stop offset="60%" stop-color="#dfb77f" />
+      <stop offset="80%" stop-color="#a67139" />
+      <stop offset="100%" stop-color="#7a4618" />
+    </linearGradient>
+    
+    <linearGradient id="goldLight" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a36e37" />
+      <stop offset="50%" stop-color="#f8e5c2" />
+      <stop offset="100%" stop-color="#935b26" />
+    </linearGradient>
+
+    <filter id="softGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#8b5523" flood-opacity="0.18" />
+    </filter>
+  </defs>
+
+  <!-- Optional Warm Soft Background -->
+  <circle cx="500" cy="500" r="480" fill="#fffdfa" />
+
+  <!-- Main Circular Ring Border -->
+  <circle cx="500" cy="500" r="430" fill="none" stroke="url(#goldGradient)" stroke-width="32" filter="url(#softGlow)" />
+  <circle cx="500" cy="500" r="402" fill="none" stroke="url(#goldLight)" stroke-width="4" opacity="0.7" />
+
+  <!-- Monogram Group (H and A intertwined) -->
+  <g id="monogram" filter="url(#softGlow)">
+    
+    <!-- Letter 'H' Left Stem with Serifs -->
+    <!-- Top Serif -->
+    <path d="M 235 270 L 375 270 L 375 288 L 320 288 L 320 712 L 375 712 L 375 730 L 235 730 L 235 712 L 290 712 L 290 288 L 235 288 Z" fill="url(#goldGradient)" />
+
+    <!-- Crossbar connecting H to A -->
+    <path d="M 290 488 L 520 488 L 520 522 L 290 522 Z" fill="url(#goldGradient)" />
+
+    <!-- Letter 'A' Left Diagonal Stem (Starts at Apex ~570, 360 down to Bottom-Left ~325, 780) -->
+    <path d="M 548 375 L 340 760 L 305 778 L 355 778 L 392 708 L 620 708 L 642 752 L 632 778 L 700 778 L 730 778 C 760 778 790 765 805 745 C 800 755 780 770 750 775 C 735 778 700 778 680 778 L 585 375 Z" fill="url(#goldGradient)" />
+
+    <!-- Letter 'A' Triangular Inner Counter Cutout -->
+    <!-- The inner hole of the A -->
+    <polygon points="566,435 480,645 650,645" fill="#fffdfa" />
+
+    <!-- Redraw H-bar over inner cutout if needed, or refine stroke -->
+    <path d="M 290 492 L 535 492 L 535 520 L 290 520 Z" fill="url(#goldGradient)" />
+
+    <!-- Aesthetic Rounded Clinic Cross / Plus Symbol at Top Right of A -->
+    <g transform="translate(620, 215) scale(1.15)">
+      <!-- Outer soft stroke/glow -->
+      <path d="M 35 10 
+               C 35 4.5, 40 0, 46 0 
+               C 52 0, 57 4.5, 57 10 
+               L 57 33 
+               L 80 33 
+               C 86.5 33, 92 38, 92 44 
+               C 92 50, 86.5 55, 80 55 
+               L 57 55 
+               L 57 78 
+               C 57 84.5, 52 89, 46 89 
+               C 40 89, 35 84.5, 35 78 
+               L 35 55 
+               L 12 55 
+               C 5.5 55, 0 50, 0 44 
+               C 0 38, 5.5 33, 12 33 
+               L 35 33 Z" 
+            fill="none" 
+            stroke="url(#goldGradient)" 
+            stroke-width="7" 
+            stroke-linejoin="round" />
+            
+      <path d="M 35 10 
+               C 35 4.5, 40 0, 46 0 
+               C 52 0, 57 4.5, 57 10 
+               L 57 33 
+               L 80 33 
+               C 86.5 33, 92 38, 92 44 
+               C 92 50, 86.5 55, 80 55 
+               L 57 55 
+               L 57 78 
+               C 57 84.5, 52 89, 46 89 
+               C 40 89, 35 84.5, 35 78 
+               L 35 55 
+               L 12 55 
+               C 5.5 55, 0 50, 0 44 
+               C 0 38, 5.5 33, 12 33 
+               L 35 33 Z" 
+            fill="#fffdfa" />
+            
+      <path d="M 35 10 
+               C 35 4.5, 40 0, 46 0 
+               C 52 0, 57 4.5, 57 10 
+               L 57 33 
+               L 80 33 
+               C 86.5 33, 92 38, 92 44 
+               C 92 50, 86.5 55, 80 55 
+               L 57 55 
+               L 57 78 
+               C 57 84.5, 52 89, 46 89 
+               C 40 89, 35 84.5, 35 78 
+               L 35 55 
+               L 12 55 
+               C 5.5 55, 0 50, 0 44 
+               C 0 38, 5.5 33, 12 33 
+               L 35 33 Z" 
+            fill="none" 
+            stroke="url(#goldGradient)" 
+            stroke-width="5" 
+            stroke-linejoin="round" />
+    </g>
+
+  </g>
+</svg>
